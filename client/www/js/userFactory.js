@@ -112,6 +112,10 @@ angular.module('user.factory', [])
       friend: friend,
       userId: window.localStorage['which.userToken']
     }
+    analytics.track('Added Friend', {
+        username: window.localStorage.getItem('which.username'),
+        friend: friend
+      });
     return $http.post(apiUrl + '/api/user/friends', data)
       .then(function(response) {
         return response.data;
@@ -126,6 +130,10 @@ angular.module('user.factory', [])
       friendId: friendId,
       userId: window.localStorage['which.userToken']
     }
+    analytics.track('Removed Friend', {
+        username: window.localStorage.getItem('which.username'),
+        friend: friend
+      });
     return $http.post(apiUrl + '/api/user/friend', data)
       .then(function(response) {
         return response.data;
