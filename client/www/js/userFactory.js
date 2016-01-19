@@ -132,7 +132,7 @@ angular.module('user.factory', [])
     }
     analytics.track('Removed Friend', {
         username: window.localStorage.getItem('which.username'),
-        friend: friend
+        friend: friendId
       });
     return $http.post(apiUrl + '/api/user/friend', data)
       .then(function(response) {
