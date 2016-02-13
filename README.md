@@ -4,9 +4,9 @@ Which? the simple <i>mobile</i> app for picking one of each pair or photos or te
 
 ## Team
 
-  - __Product Owner__: Brendan
-  - __Scrum Master__: Madeline
-  - __Development Team Members__: Song, V
+  - __Product Owner__: Ben
+  - __Scrum Master__: Kat
+  - __Development Team Members__: Becky, Jason
 
 ## Table of Contents
 
